@@ -28,19 +28,7 @@ export class AccountDetailsComponent implements OnInit {
     this.maxVlaue = 3000000;
     this.monthlyIncomeValue = 0;
     this.monthlyExpenseValue = 0;
-    this.initializeForm();
   }
-    /**
-     * Method to define personal info form group
-     * @method initPersonalInfoFrom
-     * @return {void}
-     */
-    private initializeForm() {
-      this.newPageForm = this.fb.group({
-        monthlyIncome: ['', [Validators.required]]
-      });
-      this.formControls = this.newPageForm.controls;
-    }
     public getMonthlyValue(event){
       this.monthlyIncomeValue = event;
     }
