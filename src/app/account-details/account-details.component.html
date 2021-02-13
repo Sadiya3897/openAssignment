@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="../../assets/images/design-circle.png" alt="people-shaking-hands">
+                </div>
+                <div class="allignment-flex">
+                    <nav>
+                        <ul>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li class="hvr-b-display"><a href="">Login</a></li>
+                            <li class="hvr-b-display get-started"><a href="">Get Started</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="banner-section">
+            <div class="left-div">
+                <h1>We make it Super Simple</h1>
+                <img src="../../assets/images/people-hands.png" alt="people-hands">
+            </div>
+            <div class="right-div">
+                <div class="right-section">
+                    <div class="eligibilty-calculator">
+                        <h5>Eligibilty Calculator</h5>
+                    </div>
+                    <div class="range-form-">
+                        <form action="" class="d-flex">
+                            <label for=""> Monthly Income</label>
+                            <span>&#x20B9;{{monthlyIncomeValue}}</span>
+                            <input type="range" id="vol" name="vol" [min]="minValue" [max]="maxVlaue" id="myrange"
+                                (change)="getMonthlyValue($event.target.value)">
+                            <div class="d-wrap">
+                                <span>&#x20B9;10000</span><span>&#x20B9;3000000</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="range-form-">
+                        <form action="" class="d-flex">
+                            <label for=""> Monthly Expense</label>
+                            <span>&#x20B9;{{monthlyExpenseValue}}</span>
+                            <input type="range" id="vol" name="vol" [min]="minValue" [max]="maxVlaue" id="myrange"
+                                (change)="getExpenseValue($event.target.value)">
+                        </form>
+                    </div>
+                    <div class="range-form-">
+                        <form action="" class="d-flex">
+                            <label for=""> Repayment Tenure</label>
+                            <div class="customer-tenure">
+                                <select>
+                                    <option value="6">6 Months</option>
+                                    <option value="12">12 Months</option>
+                                    <option value="18">18 Months</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="range-form-">
+                        <span>Do You have any existing loans</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="range-form-">
+                        <label for=""> EMI Of existing loan(optional)</label>
+                        <div class="customer-tenure">
+                            <input type="text" placeholder="&#x20B9;15000">
+                        </div>
+                    </div>
+                </div>
+                <div class="rght-section-get-money">
+                    <div class="loan-ammount">
+                        <span>
+                            Loan Amount
+                        </span>
+                        <span>&#x20B9;1,00,0000</span>
+                    </div>
+                    <div class="loan-ammount">
+                        <span>
+                            Your EMI Will Be
+                        </span>
+                        <span>&#x20B9;10,0000</span>
+                    </div>
+                    <div class="get-money-btn">
+                        <a href="#">Get Money</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex-wrapper">
+            <div class="d-flex-section">
+                <div class="instantly-paid">
+                    <img src="../../assets/images/Get Paid Instantly.png" alt="get-paid-instantly" style="width:89px;">
+                    <h5>Quick cash disbursement</h5>
+                    <span>Get terms loans that your business needs</span> <span>within 72 hrs</span>
+                </div>
+                <div class="instantly-paid">
+                    <img src="../../assets/images/Low interest rate.png" alt="get-paid-instantly" style="width:89px;">
+                    <h5>Low-interest rate</h5>
+                    <span>Achieve your financial goals with an </span><span>amazing interest rate starting at 13% per
+                        annum</span>
+                </div>
+                <div class="instantly-paid">
+                    <img src="../../assets/images/Secure Payments.png" alt="get-paid-instantly" style="width:89px;">
+                    <h5>Zero Paperwork</h5>
+                    <span>Get started instantly by submitting only</span><span> your basic details & bank
+                        statements</span>
+                </div>
+            </div>
+            <div class="d-flex-section-2">
+                <div class="instantly-paid business-finance">
+                    <img src="../../assets/images/freelancer_feature_icon_6@1.5x.png" alt="get-paid-instantly" style="width:89px;">
+                    <h5>Ace your business finances</h5>
+                    <span>Get terms loans that your business needs</span> <span>within 72 hrs</span>
+                </div>
+                <div class="instantly-paid">
+                    <img src="../../assets/images/Covid@2x.png" alt="get-paid-instantly" style="width:89px;">
+                    <h5>Loans to fight COVID-19</h5>
+                    <span>Zero EMI for first 3 months on Back-to </span>  <span>Business loans of upto 1 lakh</span>
+              </div>
+            </div>
+            <div>
+                <h1 style="margin-bottom:30px;">Boost your business with Open</h1>
+                <span style="display:block;margin: 40px 0;">Get your hands on a term loan that’s crafted for your
+                    business</span>
+
+                <a href="#" class="hvr-b-display get-open-account">Get an Open Account</a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
